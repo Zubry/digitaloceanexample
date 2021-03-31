@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 # Install Java
-RUN sudo apt-get install default-jre
+RUN apt-get install default-jre
 
 # Install the JDK
 RUN apt-get install wget apt-transport-https gnupg
