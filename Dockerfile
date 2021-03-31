@@ -5,5 +5,5 @@ COPY . ~/rsbot
 WORKDIR ~/rsbot
 
 RUN mvn install
-RUN mvn compile
+RUN mvn package
 
