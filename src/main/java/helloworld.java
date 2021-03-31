@@ -1,5 +1,6 @@
 class HelloWorld {
     public static void main(String[] args) {
-      SampleScript.run();
+      SampleScript script = new SampleScript();
+      script.run();
     }
 }
