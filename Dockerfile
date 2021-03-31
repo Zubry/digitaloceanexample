@@ -1,4 +1,6 @@
 FROM maven
 
-WORKDIR ~/digitaloceanexample
+MKDIR ~/rsbot
+COPY . ~/rsbot
+WORKDIR ~/rsbot
 
