@@ -1,6 +1,6 @@
 FROM maven
 
-MKDIR ~/rsbot
+RUN mkdir ~/rsbot
 COPY . ~/rsbot
 WORKDIR ~/rsbot
 
