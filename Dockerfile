@@ -1,2 +1,4 @@
 FROM maven
 
+WORKDIR ~/digitaloceanexample
+
