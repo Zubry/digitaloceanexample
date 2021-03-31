@@ -1,2 +1,2 @@
-FROM openjdk:7
+FROM maven
 
