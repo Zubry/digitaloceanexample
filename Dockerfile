@@ -6,7 +6,7 @@ WORKDIR ~/rsbot
 
 # Install Java
 RUN apt update
-RUN apt install software-properties-common
+RUN apt install -y software-properties-common
 RUN add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"
 RUN apt install -q -y oracle-java8-installer
 
