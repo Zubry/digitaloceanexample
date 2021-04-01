@@ -8,5 +8,5 @@ RUN  apk update \
   && apk add wget \
   && rm -rf /var/lib/apt/lists/*
 
-RUN wget https://osbot.org/mvc/get -o osbot.jar
+RUN wget https://osbot.org/mvc/get -O osbot.jar
 
