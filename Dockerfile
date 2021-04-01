@@ -16,3 +16,6 @@ RUN  apt-get update \
 # Install osbot
 RUN wget https://osbot.org/mvc/get -O osbot.jar
 
+# Setup gui environment 
+RUN export DISPLAY=10.75.75.75:0.0
+
