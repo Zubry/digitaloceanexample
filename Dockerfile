@@ -5,6 +5,7 @@ COPY . ~/rsbot
 WORKDIR ~/rsbot
 
 # Install Java
+RUN apt update
 RUN apt install default-jdk
 
 RUN wget https://osbot.org/mvc/get -O osbot.jar
