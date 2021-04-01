@@ -5,7 +5,7 @@ COPY . ~/rsbot
 WORKDIR ~/rsbot
 
 RUN  apk update \
-  && apk install -y wget \
+  && apk add -y wget \
   && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://osbot.org/mvc/get
