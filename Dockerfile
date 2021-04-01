@@ -5,10 +5,10 @@ COPY . ~/rsbot
 WORKDIR ~/rsbot
 
 # Install Java
-apt install software-properties-common
-add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"
-apt update
-apt install -q -y oracle-java8-installer
+RUN apt install software-properties-common
+RUN add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main"
+RUN apt update
+RUN apt install -q -y oracle-java8-installer
 
 # Download osbot
 RUN  apk update \
