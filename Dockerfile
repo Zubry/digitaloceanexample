@@ -8,5 +8,11 @@ WORKDIR ~/rsbot
 RUN apt update
 RUN apt install -y default-jdk
 
+# Install wget
+RUN  apt-get update \
+  && apt-get install -y wget \
+  && rm -rf /var/lib/apt/lists/*
+
+# Install osbot
 RUN wget https://osbot.org/mvc/get -O osbot.jar
 
