@@ -1,11 +1,11 @@
-FROM openjdk:7
+FROM openjdk:oraclelinux8
 
 RUN mkdir ~/rsbot
 COPY . ~/rsbot
 WORKDIR ~/rsbot
 
-RUN  yum update \
-  && yum install -y wget \
+RUN  apt-get update \
+  && apt-get install -y wget \
   && rm -rf /var/lib/apt/lists/*
 
 RUN wget https://osbot.org/mvc/get
