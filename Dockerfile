@@ -1,9 +1,8 @@
-FROM maven
+FROM openjdk
 
 RUN mkdir ~/rsbot
 COPY . ~/rsbot
 WORKDIR ~/rsbot
 
-RUN mvn install
-RUN mvn package
+RUN wget https://osbot.org/mvc/get
 
