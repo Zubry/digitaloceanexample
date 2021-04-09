@@ -21,5 +21,6 @@ RUN mkdir OSBot
 RUN mkdir OSBot/Scripts
 
 # Compile the script
+RUN javac -cp ".:osbot.jar" src/main/java/SampleScript.java
 RUN jar -cf OSBot/Scripts/SampleScript.jar src/main/java/SampleScript.class
 
