@@ -1,16 +1,11 @@
-import org.dreambot.api.script.AbstractScript;
-import org.dreambot.api.script.Category;
-import org.dreambot.api.script.ScriptManifest;
-import org.dreambot.api.methods.MethodProvider;
+import org.osbot.rs07.script.Script;
+import org.osbot.rs07.script.ScriptManifest;
 
-@ScriptManifest(name = "Script Name", description = "My script description!", author = "Developer Name",
-                version = 1.0, category = Category.WOODCUTTING, image = "")
-public class SampleScript extends AbstractScript {
-    @Override
-    public int onLoop() {
-        MethodProvider.log("My first script!");
-        return 1000;
-    }
+@ScriptManifest(name="SampleScript", author="Sample", version=1.0, info="", logo="")
+
+public class SampleScript extends Script {
+	@Override
+	public void onStart() {
+		log("Script started")
+	}
 }
-
-
