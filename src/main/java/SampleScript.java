@@ -18,7 +18,7 @@ public class SampleScript extends Script {
 
 	@Override
 	public void onExit() {
-		log("Exiting...")
+		log("Exiting...");
 	}
 
 	@Override
