@@ -7,7 +7,7 @@ import org.osbot.rs07.script.ScriptManifest;
 public class SampleScript extends Script {
 	@Override
 	public void onStart() {
-		System.out.println("Starting...")
+		System.out.println("Starting...");
 	}
 
 	@Override
