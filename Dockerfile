@@ -16,6 +16,10 @@ RUN  apt-get update \
 # Install osbot
 RUN wget https://osbot.org/mvc/get -O osbot.jar
 
-# Setup gui environment 
-RUN export DISPLAY=10.75.75.75:0.0
+# Setup folder structure
+RUN mkdir OSBot
+RUN mkdir OSBot/Scripts
+
+# Compile the script
+RUN jar -cf OSBot/Scripts/SampleScript.jar src/main/java/SampleScript.class
 
